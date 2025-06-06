@@ -1,132 +1,138 @@
-� Teste Técnico – Desenvolvedor(a) Fullstack TypeScript
+**Teste Técnico – Desenvolvedor(a) Fullstack TypeScript**
 
-� Objetivo Geral
+**Objetivo Geral**
 
 Criar uma aplicação fullstack utilizando TypeScript, composta por uma API RESTful e uma interface web ou mobile, que permita o cadastro e consulta de dados relacionados à data de admissão e salário bruto de funcionários.
 
-� Tecnologias Esperadas
+**Tecnologias Esperadas**
 
-Backend:
-Node.js com TypeScript (preferencialmente com NestJS, opcional: Express)
+  Backend:
+    Node.js com TypeScript (preferencialmente com NestJS, opcional: Express)
+    
+    MongoDB
+    
+    Mongoose ou TypeORM
+    
+    Swagger (OpenAPI)
+    
+    Jest (ou outro framework de testes)
 
-MongoDB
-Mongoose ou TypeORM
-Swagger (OpenAPI)
+    Docker e Docker Compose
 
-Jest (ou outro framework de testes)
+  Frontend:
+    
+    React ou React Native
 
-Docker e Docker Compose
+    TypeScript
 
-Frontend:
-React ou React Native
+    Axios ou Fetch API
 
-TypeScript
+    Material UI, Chakra UI, Tailwind ou similar
 
-Axios ou Fetch API
+    Jest + Testing Library
 
-Material UI, Chakra UI, Tailwind ou similar
+**(Diferencial) Cypress ou Playwright para testes E2E**
 
-Jest + Testing Library
 
-(Diferencial) Cypress ou Playwright para testes E2E
+**Especificações Funcionais**
 
-� Especificações Funcionais
-� Backend
-1. Endpoint Principal
-Criar um endpoint POST que receba:
+**Backend**
+    
+    1. Endpoint Principal
+        Criar um endpoint POST que receba:
 
-dataAdmissao (formato: YYYY-MM-DD)
+        dataAdmissao (formato: YYYY-MM-DD)
 
-salarioBruto (número positivo)
+        salarioBruto (número positivo)
 
-Retornar:
+        Retornar:
 
-Dias, meses e anos decorridos desde a data de admissão
+        Dias, meses e anos decorridos desde a data de admissão
 
-35% do salário bruto (com 2 casas decimais)
+        35% do salário bruto (com 2 casas decimais)
 
-2. Validações
-dataAdmissao: obrigatório, tipo Date, não pode estar no futuro
+    2. Validações
+        dataAdmissao: obrigatório, tipo Date, não pode estar no futuro
 
-salarioBruto: obrigatório, positivo, com limite mínimo e máximo razoável
+        salarioBruto: obrigatório, positivo, com limite mínimo e máximo razoável
 
-3. Persistência
-Salvar dados enviados e resultados calculados no MongoDB
+    3. Persistência
+        Salvar dados enviados e resultados calculados no MongoDB
 
-4. Consultas
-GET /registros: lista todos os registros (com filtros e paginação)
+    4. Consultas
+        GET /registros: lista todos os registros (com filtros e paginação)
 
-GET /registros/:id: retorna um registro específico por ID
+        GET /registros/:id: retorna um registro específico por ID
 
-5. Tratamento de Erros
-Padronizar erros em JSON com: status, mensagem, e timestamp
+    5. Tratamento de Erros
+        Padronizar erros em JSON com: status, mensagem, e timestamp
 
-Utilizar exception filter global (NestJS) ou middleware
+        Utilizar exception filter global (NestJS) ou middleware
 
-6. Documentação
-Documentar todos os endpoints com Swagger/OpenAPI
+    6. Documentação
+        Documentar todos os endpoints com Swagger/OpenAPI
 
-Incluir exemplos de request/response
+        Incluir exemplos de request/response
 
-7. Testes
-Testes unitários da lógica de cálculo
+    7. Testes
+        Testes unitários da lógica de cálculo
 
-Testes de integração dos endpoints principais
+        Testes de integração dos endpoints principais
 
-8. Docker
-Incluir Dockerfile e docker-compose.yml com:
+    8. Docker
+        Incluir Dockerfile e docker-compose.yml com:
 
-Aplicação
+**Aplicação**
 
-MongoDB
+    MongoDB
 
-� Frontend
-1. Formulário de Cadastro
-Campos: Data de Admissão e Salário Bruto
+    Frontend
+      1. Formulário de Cadastro
+        Campos: Data de Admissão e Salário Bruto
 
-Validação de campos e envio para a API
+        Validação de campos e envio para a API
 
-Exibir:
+        Exibir:
 
-Dias, meses e anos desde a admissão
+        Dias, meses e anos desde a admissão
 
-35% do salário bruto
+        35% do salário bruto
 
-2. Listagem de Registros
-Consumir a API de listagem e exibir os registros salvos
+      2. Listagem de Registros
+        Consumir a API de listagem e exibir os registros salvos
 
-Implementar:
+      Implementar:
 
-Filtros (por data ou faixa salarial)
+        Filtros (por data ou faixa salarial)
 
-Paginação
+        Paginação
 
-Visualização de detalhes (modal ou página)
+        Visualização de detalhes (modal ou página)
 
-� Requisitos de Interface
-Design limpo e responsivo (desktop + mobile)
+**Requisitos de Interface**
+  Design limpo e responsivo (desktop + mobile)
 
-Utilização de componentes reutilizáveis
+  Utilização de componentes reutilizáveis
 
-Organização modular por feature/domínio
+  Organização modular por feature/domínio
 
-� Requisitos Técnicos
-Utilizar React com Hooks, Context ou Redux
+**Requisitos Técnicos**
+  Utilizar React com Hooks, Context ou Redux
 
-Testes unitários com Testing Library
+  Testes unitários com Testing Library
 
-Tratamento de loading, erros e sucesso ao consumir a API
+  Tratamento de loading, erros e sucesso ao consumir a API
 
-Boas práticas com Git (commits limpos e frequentes)
+  Boas práticas com Git (commits limpos e frequentes)
 
-Código 100% TypeScript
+  Código 100% TypeScript
 
-� Diferenciais
-Testes E2E com Cypress ou Playwright
+**Diferenciais**
+  Testes E2E com Cypress ou Playwright
 
-Deploy do frontend (Vercel, Netlify, Expo, etc.)
+  Deploy do frontend (Vercel, Netlify, Expo, etc.)
 
-Linter + Prettier configurados
+  Linter + Prettier configurados
 
 ✅ Critérios de Avaliação
 Área	Avaliação
@@ -137,7 +143,7 @@ Testes	Cobertura, organização e clareza dos testes unitários e de integraçã
 Documentação	Swagger completo + instruções no README
 Git	Histórico de commits com mensagens claras e uso de branches (se aplicável)
 
-� Entrega
+**Entrega**
 Subir o código em um repositório Git público ou privado (liberar acesso)
 
 Incluir README com:
