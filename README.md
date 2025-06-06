@@ -1,9 +1,9 @@
-� Teste Técnico – Desenvolvedor(a) Fullstack TypeScript
+  Teste Técnico – Desenvolvedor(a) Fullstack TypeScript
 
-� Objetivo Geral
+  Objetivo Geral
 Criar uma aplicação fullstack utilizando TypeScript, composta por uma API RESTful e uma interface web ou mobile, que permita o cadastro e consulta de dados relacionados à data de admissão e salário bruto de funcionários.
 
-� Tecnologias Esperadas
+  Tecnologias Esperadas
 
 Backend:
 Node.js com TypeScript (preferencialmente com NestJS, opcional: Express)
@@ -22,8 +22,8 @@ Jest + Testing Library
 
 (Diferencial) Cypress ou Playwright para testes E2E
 
-� Especificações Funcionais
-� Backend
+  Especificações Funcionais
+  Backend
 1. Endpoint Principal
 Criar um endpoint POST que receba:
 dataAdmissao (formato: YYYY-MM-DD)
@@ -61,7 +61,7 @@ Incluir Dockerfile e docker-compose.yml com:
 Aplicação
 MongoDB
 
-� Frontend
+  Frontend
 1. Formulário de Cadastro
 Campos: Data de Admissão e Salário Bruto
 Validação de campos e envio para a API
@@ -78,12 +78,12 @@ Filtros (por data ou faixa salarial)
 Paginação
 Visualização de detalhes (modal ou página)
 
-� Requisitos de Interface
+  Requisitos de Interface
 Design limpo e responsivo (desktop + mobile)
 Utilização de componentes reutilizáveis
 Organização modular por feature/domínio
 
-� Requisitos Técnicos
+  Requisitos Técnicos
 Utilizar React com Hooks, Context ou Redux
 Testes unitários com Testing Library
 Tratamento de loading, erros e sucesso ao consumir a API
@@ -91,7 +91,7 @@ Boas práticas com Git (commits limpos e frequentes)
 
 Código 100% TypeScript
 
-� Diferenciais
+  Diferenciais
 Testes E2E com Cypress ou Playwright
 Deploy do frontend (Vercel, Netlify, Expo, etc.)
 Linter + Prettier configurados
@@ -105,7 +105,7 @@ Testes	Cobertura, organização e clareza dos testes unitários e de integraçã
 Documentação	Swagger completo + instruções no README
 Git	Histórico de commits com mensagens claras e uso de branches (se aplicável)
 
-� Entrega
+  Entrega
 Subir o código em um repositório Git público ou privado (liberar acesso)
 
 Incluir README com:
