@@ -7,10 +7,15 @@ Criar uma aplicação fullstack utilizando TypeScript, composta por uma API REST
 
 Backend:
 Node.js com TypeScript (preferencialmente com NestJS, opcional: Express)
+
 MongoDB
+
 Mongoose ou TypeORM
+
 Swagger (OpenAPI)
+
 Jest (ou outro framework de testes)
+
 Docker e Docker Compose
 
 Frontend:
