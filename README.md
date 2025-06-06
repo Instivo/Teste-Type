@@ -27,7 +27,7 @@ Criar uma aplicação fullstack utilizando TypeScript, composta por uma API REST
 
     Axios ou Fetch API
 
-    Material UI, Chakra UI, Tailwind ou similar
+    Tailwind
 
     Jest + Testing Library
 
