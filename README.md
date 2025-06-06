@@ -1,15 +1,16 @@
 � Teste Técnico – Desenvolvedor(a) Fullstack TypeScript
+
 � Objetivo Geral
+
 Criar uma aplicação fullstack utilizando TypeScript, composta por uma API RESTful e uma interface web ou mobile, que permita o cadastro e consulta de dados relacionados à data de admissão e salário bruto de funcionários.
 
 � Tecnologias Esperadas
+
 Backend:
 Node.js com TypeScript (preferencialmente com NestJS, opcional: Express)
 
 MongoDB
-
 Mongoose ou TypeORM
-
 Swagger (OpenAPI)
 
 Jest (ou outro framework de testes)
